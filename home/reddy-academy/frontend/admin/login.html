@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17243a">
+  <title>Admin Login | REDDY ACADEMY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/admin/admin.css">
+  <script src="/admin/login.js" defer></script>
+</head>
+<body class="admin-page">
+  <header class="admin-topbar">
+    <a class="wordmark" href="/">REDDY <span>ACADEMY</span></a>
+    <a href="/" class="admin-back-link">Back to public website <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="admin-login-wrap">
+    <section class="admin-login-card">
+      <p class="eyebrow">PRIVATE ADMIN ACCESS</p>
+      <h1>Welcome <em>back.</em></h1>
+      <p class="login-intro">Sign in to manage parent enquiries.</p>
+      <form id="admin-login-form">
+        <label class="field">Administrator email
+          <input name="email" type="email" autocomplete="username" maxlength="254" required>
+        </label>
+        <label class="field">Password
+          <input name="password" type="password" autocomplete="current-password" required>
+        </label>
+        <p id="login-error" class="admin-error" role="alert" aria-live="polite"></p>
+        <button class="button button-primary admin-submit" type="submit"><span>Sign in</span><span aria-hidden="true">→</span></button>
+      </form>
+      <p class="private-note"><span aria-hidden="true">◆</span> Authorized administrators only.</p>
+    </section>
+  </main>
+</body>
+</html>
